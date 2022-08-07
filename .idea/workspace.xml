@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="959ae60f-7227-44c4-a158-4a5fe2d6048e" name="Changes" comment="creating page1">
-      <change afterPath="$PROJECT_DIR$/style1.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page1.html" beforeDir="false" afterPath="$PROJECT_DIR$/page1.html" afterDir="false" />
+    <list default="true" id="959ae60f-7227-44c4-a158-4a5fe2d6048e" name="Changes" comment="creating a readme.md file">
+      <change afterPath="$PROJECT_DIR$/js1.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +29,9 @@
     <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="2D1fQaBX8vztjS5xHiLmbN6R8Cv" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -68,7 +68,35 @@
       <option name="project" value="LOCAL" />
       <updated>1659872477435</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="creating style1.css">
+      <created>1659872774003</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1659872774003</updated>
+    </task>
+    <task id="LOCAL-00004" summary="some modifications">
+      <created>1659872791018</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1659872791018</updated>
+    </task>
+    <task id="LOCAL-00005" summary="link the stylesheet">
+      <created>1659872814027</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1659872814027</updated>
+    </task>
+    <task id="LOCAL-00006" summary="creating a readme.md file">
+      <created>1659873007349</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1659873007349</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -84,6 +112,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="creating page1" />
-    <option name="LAST_COMMIT_MESSAGE" value="creating page1" />
+    <MESSAGE value="creating style1.css" />
+    <MESSAGE value="some modifications" />
+    <MESSAGE value="link the stylesheet" />
+    <MESSAGE value="creating a readme.md file" />
+    <option name="LAST_COMMIT_MESSAGE" value="creating a readme.md file" />
   </component>
 </project>
