@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="959ae60f-7227-44c4-a158-4a5fe2d6048e" name="Changes" comment="creating a readme.md file">
-      <change afterPath="$PROJECT_DIR$/js1.js" afterDir="false" />
+    <list default="true" id="959ae60f-7227-44c4-a158-4a5fe2d6048e" name="Changes" comment="some changes in .xml file">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page1.html" beforeDir="false" afterPath="$PROJECT_DIR$/page1.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +97,21 @@
       <option name="project" value="LOCAL" />
       <updated>1659873007349</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="created JS file">
+      <created>1659873070823</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1659873070823</updated>
+    </task>
+    <task id="LOCAL-00008" summary="some changes in .xml file">
+      <created>1659873093230</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1659873093230</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -116,6 +131,8 @@
     <MESSAGE value="some modifications" />
     <MESSAGE value="link the stylesheet" />
     <MESSAGE value="creating a readme.md file" />
-    <option name="LAST_COMMIT_MESSAGE" value="creating a readme.md file" />
+    <MESSAGE value="created JS file" />
+    <MESSAGE value="some changes in .xml file" />
+    <option name="LAST_COMMIT_MESSAGE" value="some changes in .xml file" />
   </component>
 </project>
