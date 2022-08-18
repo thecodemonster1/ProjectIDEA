@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="style1.css">
-        <link rel="scripts" type="text/javascript" href="js1.js">
+        <script src="js1.js"></script>
         <title>page1</title>
         <style>
 
@@ -14,20 +14,21 @@
         <p>Enter a number: <input type="number" id="num1"></p>
         <p>Choose an operator:
             <form>
-                <input type="radio" name="operator" id="add">
+                <input type="radio" name="operator" id="add" class="operator">
                 <lable>+</lable>
-            <br>
-                <input type="radio" name="operator" id="sub">
+
+                <input type="radio" name="operator" id="sub" class="operator">
                 <lable>-</lable>
-            <br>
-                <input type="radio" name="operator" id="mul">
+
+                <input type="radio" name="operator" id="mul" class="operator">
                 <lable>x</lable>
-            <br>
-                <input type="radio" name="operator" id="div">
+
+                <input type="radio" name="operator" id="div" class="operator">
                 <lable>/</lable>
-            <br>
+
             </form>
         </p>
         <p>Enter an another number: <input type="number" id="num2"></p>
+        <p>Total is : <p id = "display">0</p></p>
     </body>
 </html>
