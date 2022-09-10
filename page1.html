@@ -12,11 +12,24 @@
     <body>
         <h1 style="text-align: center">Login Form</h1>
         <form id="loginForm">
-            <table align="center" cellpadding="5px" cellspacing="0">
+            <table align="center" cellpadding="2em" cellspacing="0">
                 <tr>
                     <td>Username: </td>
                     <td>
-                        <input type="text" name="usernameBox" id="usernameBox" />
+                        <input type="text" name="usernameBox" id="usernameBox" required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password: </td>
+                    <td>
+                        <input type="password" name="passwordBox" id="passwordBox" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" id="smtBtn" value="Login">
+                        <input type="reset" id="rstBtn" value="Reset">
                     </td>
                 </tr>
             </table>

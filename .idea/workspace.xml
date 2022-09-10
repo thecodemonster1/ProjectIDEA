@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="959ae60f-7227-44c4-a158-4a5fe2d6048e" name="Changes" comment="resettled and update the project">
+    <list default="true" id="959ae60f-7227-44c4-a158-4a5fe2d6048e" name="Changes" comment="added table row tag">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page1.html" beforeDir="false" afterPath="$PROJECT_DIR$/page1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style1.css" beforeDir="false" afterPath="$PROJECT_DIR$/style1.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +156,42 @@
       <option name="project" value="LOCAL" />
       <updated>1660812308760</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="resettled and update the project">
+      <created>1662812090123</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1662812090123</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add a style for font color">
+      <created>1662812121526</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1662812121526</updated>
+    </task>
+    <task id="LOCAL-00017" summary="modified contents">
+      <created>1662812188018</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1662812188018</updated>
+    </task>
+    <task id="LOCAL-00018" summary="modified contents">
+      <created>1662812198255</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1662812198255</updated>
+    </task>
+    <task id="LOCAL-00019" summary="added table row tag">
+      <created>1662812259152</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1662812259152</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -184,6 +218,9 @@
     <MESSAGE value="sample try" />
     <MESSAGE value="removing extra tags" />
     <MESSAGE value="resettled and update the project" />
-    <option name="LAST_COMMIT_MESSAGE" value="resettled and update the project" />
+    <MESSAGE value="add a style for font color" />
+    <MESSAGE value="modified contents" />
+    <MESSAGE value="added table row tag" />
+    <option name="LAST_COMMIT_MESSAGE" value="added table row tag" />
   </component>
 </project>
