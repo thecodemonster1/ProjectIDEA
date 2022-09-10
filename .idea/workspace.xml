@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="959ae60f-7227-44c4-a158-4a5fe2d6048e" name="Changes" comment="lots of changes🙂">
+    <list default="true" id="959ae60f-7227-44c4-a158-4a5fe2d6048e" name="Changes" comment="resettled and update the project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js1.js" beforeDir="false" afterPath="$PROJECT_DIR$/js1.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page1.html" beforeDir="false" afterPath="$PROJECT_DIR$/page1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style1.css" beforeDir="false" afterPath="$PROJECT_DIR$/style1.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +129,35 @@
       <option name="project" value="LOCAL" />
       <updated>1660810599669</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="remove the br tags and add class attribute">
+      <created>1660811863284</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1660811863284</updated>
+    </task>
+    <task id="LOCAL-00012" summary="remove the br tags and add class attribute">
+      <created>1660811883430</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1660811883430</updated>
+    </task>
+    <task id="LOCAL-00013" summary="sample try">
+      <created>1660811911266</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1660811911266</updated>
+    </task>
+    <task id="LOCAL-00014" summary="removing extra tags">
+      <created>1660812308760</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1660812308760</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -152,6 +180,10 @@
     <MESSAGE value="created JS file" />
     <MESSAGE value="some changes in .xml file" />
     <MESSAGE value="lots of changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="lots of changes" />
+    <MESSAGE value="remove the br tags and add class attribute" />
+    <MESSAGE value="sample try" />
+    <MESSAGE value="removing extra tags" />
+    <MESSAGE value="resettled and update the project" />
+    <option name="LAST_COMMIT_MESSAGE" value="resettled and update the project" />
   </component>
 </project>
