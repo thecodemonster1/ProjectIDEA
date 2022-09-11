@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="959ae60f-7227-44c4-a158-4a5fe2d6048e" name="Changes" comment="copied from lab answer">
-      <change afterPath="$PROJECT_DIR$/RegPage.html" afterDir="false" />
+    <list default="true" id="959ae60f-7227-44c4-a158-4a5fe2d6048e" name="Changes" comment="...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/HomePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loginPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/loginPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RegPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/RegPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style1.css" beforeDir="false" afterPath="$PROJECT_DIR$/style1.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -257,7 +256,35 @@
       <option name="project" value="LOCAL" />
       <updated>1662875283100</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="created regPage">
+      <created>1662879163057</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1662879163057</updated>
+    </task>
+    <task id="LOCAL-00030" summary="change the input button tag to normal button tag">
+      <created>1662879209480</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1662879209480</updated>
+    </task>
+    <task id="LOCAL-00031" summary="change colors and add some attributes like buttons">
+      <created>1662879239299</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1662879239300</updated>
+    </task>
+    <task id="LOCAL-00032" summary="...">
+      <created>1662879257849</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1662879257849</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -272,8 +299,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="creating page1" />
-    <MESSAGE value="creating style1.css" />
     <MESSAGE value="some modifications" />
     <MESSAGE value="link the stylesheet" />
     <MESSAGE value="creating a readme.md file" />
@@ -295,6 +320,10 @@
     <MESSAGE value="change the background color" />
     <MESSAGE value="commented the space between buttons" />
     <MESSAGE value="copied from lab answer" />
-    <option name="LAST_COMMIT_MESSAGE" value="copied from lab answer" />
+    <MESSAGE value="created regPage" />
+    <MESSAGE value="change the input button tag to normal button tag" />
+    <MESSAGE value="change colors and add some attributes like buttons" />
+    <MESSAGE value="..." />
+    <option name="LAST_COMMIT_MESSAGE" value="..." />
   </component>
 </project>
