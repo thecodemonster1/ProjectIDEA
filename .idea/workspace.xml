@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="959ae60f-7227-44c4-a158-4a5fe2d6048e" name="Changes" comment="commented the space between buttons">
+    <list default="true" id="959ae60f-7227-44c4-a158-4a5fe2d6048e" name="Changes" comment="copied from lab answer">
+      <change afterPath="$PROJECT_DIR$/RegPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/HomePage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loginPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/loginPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style1.css" beforeDir="false" afterPath="$PROJECT_DIR$/style1.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -248,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662874142605</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="copied from lab answer">
+      <created>1662875283100</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1662875283100</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -285,6 +294,7 @@
     <MESSAGE value="added font size" />
     <MESSAGE value="change the background color" />
     <MESSAGE value="commented the space between buttons" />
-    <option name="LAST_COMMIT_MESSAGE" value="commented the space between buttons" />
+    <MESSAGE value="copied from lab answer" />
+    <option name="LAST_COMMIT_MESSAGE" value="copied from lab answer" />
   </component>
 </project>
