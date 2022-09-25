@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="959ae60f-7227-44c4-a158-4a5fe2d6048e" name="Changes" comment="i deleted all js codings">
+    <list default="true" id="959ae60f-7227-44c4-a158-4a5fe2d6048e" name="Changes" comment="starting with refresh...😊">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/HomePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RegPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/RegPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loginPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/loginPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style1.css" beforeDir="false" afterPath="$PROJECT_DIR$/style1.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -334,7 +332,21 @@
       <option name="project" value="LOCAL" />
       <updated>1664126929628</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="recreating the css file">
+      <created>1664132273317</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1664132273318</updated>
+    </task>
+    <task id="LOCAL-00041" summary="starting with refresh...😊">
+      <created>1664132315820</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1664132315820</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -349,8 +361,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="lots of changes" />
-    <MESSAGE value="remove the br tags and add class attribute" />
     <MESSAGE value="sample try" />
     <MESSAGE value="removing extra tags" />
     <MESSAGE value="resettled and update the project" />
@@ -374,6 +384,8 @@
     <MESSAGE value="big changes" />
     <MESSAGE value="i delete all the css codes" />
     <MESSAGE value="i deleted all js codings" />
-    <option name="LAST_COMMIT_MESSAGE" value="i deleted all js codings" />
+    <MESSAGE value="recreating the css file" />
+    <MESSAGE value="starting with refresh..." />
+    <option name="LAST_COMMIT_MESSAGE" value="starting with refresh..." />
   </component>
 </project>
