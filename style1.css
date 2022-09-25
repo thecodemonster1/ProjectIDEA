@@ -1,0 +1,26 @@
+body{
+    background-color: black;
+    font-size: 1.25em;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    background-color: #ffffff;
+    padding: 15px;
+}
+
+.navbar > a{
+    padding: 15px;
+    text-decoration: none;
+    padding: 15px ;
+    color: ##595459;
+}
+
+.navbar > a:hover{
+    background-color: #c6cdc8;
+    color: black;
+    font-size: 1.15em;
+
+}
