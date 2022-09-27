@@ -12,11 +12,11 @@ body{
 
 }
 
-.navbar > a{
+.navbar > a:visited, a:link{
     padding: 15px;
     text-decoration: none;
     padding: 15px ;
-    color: ##595459;
+    color: #595459;
 }
 
 .navbar > a:hover{
@@ -33,4 +33,22 @@ body{
 
 .showCase a:hover {
     text-decoration: underline;
+}
+
+.showCase2{
+    background-color: white;
+    color: black;
+}
+
+.showCase2 a {
+    text-decoration: none;
+    color: black;
+}
+
+.showCase2 a:hover {
+    text-decoration: underline;
+}
+
+.lmLinks a{
+    color: #258eff;
 }
