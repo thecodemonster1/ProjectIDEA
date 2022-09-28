@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="959ae60f-7227-44c4-a158-4a5fe2d6048e" name="Changes" comment="...">
-      <change afterPath="$PROJECT_DIR$/aboutUs.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cements.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contactUs.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/electronics.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3d models/logo.ai" beforeDir="false" afterPath="$PROJECT_DIR$/3d models/logo.ai" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/HomePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/Images/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RegPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/RegPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loginPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/loginPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage.html" beforeDir="false" afterPath="$PROJECT_DIR$/storage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style1.css" beforeDir="false" afterPath="$PROJECT_DIR$/style1.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,13 +57,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659871495339</updated>
-    </task>
-    <task id="LOCAL-00005" summary="link the stylesheet">
-      <created>1659872814027</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1659872814027</updated>
     </task>
     <task id="LOCAL-00006" summary="creating a readme.md file">
       <created>1659873007349</created>
@@ -414,7 +394,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664243380574</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="...">
+      <created>1664248436068</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1664248436068</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
