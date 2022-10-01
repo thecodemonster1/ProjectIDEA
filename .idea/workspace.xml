@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="959ae60f-7227-44c4-a158-4a5fe2d6048e" name="Changes" comment="Add style to navigation">
+    <list default="true" id="959ae60f-7227-44c4-a158-4a5fe2d6048e" name="Changes" comment="...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/HomePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RegPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/RegPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aboutUs.html" beforeDir="false" afterPath="$PROJECT_DIR$/aboutUs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cements.html" beforeDir="false" afterPath="$PROJECT_DIR$/cements.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contactUs.html" beforeDir="false" afterPath="$PROJECT_DIR$/contactUs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/electronics.html" beforeDir="false" afterPath="$PROJECT_DIR$/electronics.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loginPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/loginPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipes.html" beforeDir="false" afterPath="$PROJECT_DIR$/pipes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/services.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage.html" beforeDir="false" afterPath="$PROJECT_DIR$/storage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools.html" beforeDir="false" afterPath="$PROJECT_DIR$/tools.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style1.css" beforeDir="false" afterPath="$PROJECT_DIR$/style1.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,20 +57,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659871495339</updated>
-    </task>
-    <task id="LOCAL-00008" summary="some changes in .xml file">
-      <created>1659873093230</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1659873093230</updated>
-    </task>
-    <task id="LOCAL-00009" summary="some changes in .xml file">
-      <created>1660810550784</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1660810550784</updated>
     </task>
     <task id="LOCAL-00010" summary="lots of changes🙂">
       <created>1660810599669</created>
@@ -411,7 +387,21 @@
       <option name="project" value="LOCAL" />
       <updated>1664644908381</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="update navigation bar">
+      <created>1664644935706</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1664644935706</updated>
+    </task>
+    <task id="LOCAL-00058" summary="...">
+      <created>1664644962937</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1664644962937</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -426,7 +416,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="reset" />
     <MESSAGE value="added some spaces" />
     <MESSAGE value="added font size" />
     <MESSAGE value="change the background color" />
@@ -448,9 +437,10 @@
     <MESSAGE value="search logo" />
     <MESSAGE value="created new page call storage" />
     <MESSAGE value="update some link styles and navbar styles" />
-    <MESSAGE value="..." />
     <MESSAGE value="Add some content blocks" />
     <MESSAGE value="Add style to navigation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add style to navigation" />
+    <MESSAGE value="update navigation bar" />
+    <MESSAGE value="..." />
+    <option name="LAST_COMMIT_MESSAGE" value="..." />
   </component>
 </project>
