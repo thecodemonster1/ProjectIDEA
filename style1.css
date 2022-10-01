@@ -13,9 +13,9 @@ body{
 }
 
 .navbar > a:visited, a:link{
-    padding: 15px;
-    text-decoration: none;
+    padding-top: -5px;
     padding: 15px ;
+    text-decoration: none;
     color: #ffffff;
 }
 
@@ -26,10 +26,30 @@ body{
 
 }
 
-#logo:hover{
-    width: 5%;
-    background-color: transparent;
+.homeBtn{
+    position: relative;
+    display: inline-block;
 }
+
+#logoHidden{
+    display: none;
+    position: absolute;
+    background-color: #a3a3a3;
+    box-shadow: #ffffff;
+    z-index: 1;
+}
+
+.homeBtn:hover #logoHidden{
+    display: block;
+}
+
+#description{
+    padding: 15px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+}
+
 
 .showCase a {
     text-decoration: none;
@@ -57,3 +77,15 @@ body{
 .lmLinks a{
     color: #258eff;
 }
+
+.showCase3{
+    background-color: white;
+    color: black;
+    /*position: relative;*/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minimax(30vw, 160px);
+    grid-gap: 50px;
+    font-size: 0.7em;
+    width: 100%;
+}1
