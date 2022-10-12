@@ -36,11 +36,29 @@ body{
     position: absolute;
     background-color: #a3a3a3;
     box-shadow: #ffffff;
+    border-radius: 20px;
     z-index: 1;
+
 }
+.homeBtn #logoHidden{
+    display: none;
+    transition: display 2s;
+}
+
 
 .homeBtn:hover #logoHidden{
     display: block;
+
+}
+
+#logoBig{
+    width: 100px;
+    transition: width 2s;
+    transition-timing-function: ease-out;
+}
+
+#logoBig:hover{
+    width: 200px;
 }
 
 #description{
@@ -48,12 +66,24 @@ body{
     border: 1px solid white;
     background-color: black;
     color: white;
+    border-radius: 20px;
+}
+
+
+#search{
+    display: none;
+}
+
+#searchImg:hover #search{
+    display: block;
+
 }
 
 
 .showCase a {
     text-decoration: none;
     color: white;
+    transition: text-decoration 0.7s;
 }
 
 .showCase a:hover {
