@@ -157,4 +157,10 @@ body{
     grid-gap: 50px;
     font-size: 0.7em;
     width: 100%;
-}1
+    
+}
+
+div.showCase3{
+    overflow: auto;
+    white-space: nowrap;
+}

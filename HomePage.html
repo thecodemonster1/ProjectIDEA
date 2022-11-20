@@ -8,35 +8,38 @@
         <link rel="shourtcut icon" href="Images/MCH_logo.ico">
         <link rel="stylesheet" type="text/css" href="style1.css">
         <script src="js1.js"></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <title>MCHHome</title>
     </head>
         <body>
 
-        <div class="navbar" id="navbar" align="center" style="font-size:0.7em;padding-top: -5px;">
-            <a href="HomePage.html" class="homeBtn">
-                <img src="Images/logo.png" width="20px" id="logo"/>
-<!--                <div id="logoHidden">-->
-<!--                    <img src="Images/logo.png" id="logoBig"/>-->
-<!--                    <div id="description">-->
-<!--                        Home-->
-<!--                    </div>-->
-<!--                </div>-->
-                Home
-            </a>
-            <a href="storage.html">Store</a>
-            <a href="services.html">Services</a>
-            <a href="cements.html">Cements</a>
-            <a href="pipes.html">Pipes</a>
-            <a href="tools.html">Tools</a>
-            <a href="electronics.html">Electronics</a>
-            <a href="RegPage.html">Register</a>
-            <a href="loginPage.html">LogIn</a>
-            <a href="aboutUs.html">About</a>
-            <a href="contactUs.html">Contact Us</a>
-            <a href="" id="searchImg"><img src="Images/search.png" width="20px"></a>
-            <a href="" id="shoppingCart"><img src="Images/shoppingCart.png" width="20px"></a>
+            <nav>
+                <div class="navbar" id="navbar" align="center" style="font-size:0.7em;padding-top: -5px;">
+                    <a href="HomePage.html" class="homeBtn">
+                        <img src="Images/logo.png" width="16px" id="logo"/>
+                        Home
+                    </a>
+                    <a href="storage.html">Store</a>
+                    <a href="services.html">Services</a>
+                    <a href="cements.html">Cements</a>
+                    <a href="pipes.html">Pipes</a>
+                    <a href="tools.html">Tools</a>
+                    <a href="electronics.html">Electronics</a>
+                    <a href="RegPage.html">Register</a>
+                    <a href="loginPage.html">LogIn</a>
+                    <a href="aboutUs.html">About</a>
+                    <a href="contactUs.html">Contact Us</a>
+                    <a href="" id="searchImg"><img src="Images/search.png" width="16px"></a>
+                    <a href="" id="shoppingCart"><img src="Images/shoppingCart.png" width="16px"></a>
+                
+                </div>
+            </nav>
+            
 
-        </div>
+        <!-- <?php 
+            $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/php/";
+            include($IPATH."headernav.html");
+        ?> -->
 
         <br>
 
@@ -59,15 +62,15 @@
     <!--    2nd Showcase-->
         <div class="showCase2" id="show2">
             <br>
-            <h1 style="font-size:3em;"><b>Black&Dacker ToolSet</b></h1>
+            <h1 style="font-size:3em;"><b>Sanstha Cement(Holcim)</b></h1>
             <p>Build. Strongly.</p>
             <div class="lmLinks">
                 <a href="https://www.ultratechcement.lk/" target="_blank">Learn more</a><emp style="color:#258eff"> > </emp>
                 &nbsp;&nbsp;
                 <a href="">Buy</a><emp style="color:#258eff"> > </emp>
             </div>
-
-            <img src="images/blackNdackerTools.png" width="50%">
+            <br> <br>
+            <img src="Images/sansthaCementImage.jpeg" width="50%">
             <br>
         </div>
         <br>
@@ -101,7 +104,7 @@
                     &nbsp;&nbsp;
                     <a href="#">Buy</a><emp style="color:#258eff"> > </emp>
                 </div>
-
+                <br> <br>
                 <img src="images/blackNdackerTools.png" width="50%">
                 <br>
             </div>
@@ -115,35 +118,40 @@
                     &nbsp;&nbsp;
                     <a href="">Buy</a><emp style="color:#258eff"> > </emp>
                 </div>
-
+                <br> <br>
                 <img src="images/blackNdackerTools.png" width="50%">
                 <br>
             </div>
         </div>
         <br>
 
-        <div class="header">
+        
+        <!-- <?php 
+            include($IPATH."footer.html");
+        ?> -->
+
+        <div class="footer">
             <img src="Images/logo.png" width="10%" alt="Logo"/>
             <p>MC Hardware</p>
-    <!--        <h1>MC Hardware</h1>-->
+        <!--        <h1>MC Hardware</h1>-->
             <p>Make your dream house with low cost</p>
         </div>
-
-
-        <script>
-            window.onscroll = function() {myFunction()};
-
-            var navbar = document.getElementById("navbar");
-            var sticky = navbar.offsetTop;
-
-            function myFunction() {
-              if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-              } else {
-                navbar.classList.remove("sticky");
-              }
-            }
-        </script>
+        
 
 
     </body>
+</html>
+<script>
+    window.onscroll = function() {myFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+</script>
