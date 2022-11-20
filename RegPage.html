@@ -32,8 +32,11 @@
         
         </div>
     </nav>
-<h1 align="center">Register Now</h1>
-<form id="regForm" >
+<br> <br>
+
+<!-- <h1 align="center">Register Now</h1> -->
+<!-- <form id="regForm" >
+
     <table id="regTable" align="center">
         <tr>
             <td>First Name: </td>
@@ -91,6 +94,270 @@
         </tr>
 
     </table>
-</form>
+
+
+    
+</form> -->
+
+<br> <br>
+<div class="registerContainer">
+            
+    <!-- <form id="loginForm">
+        <table align="center" id="loginTable" cellspacing="0">
+            <tr>
+                <td>Username: </td>
+                <td>
+                    <input type="text" name="usernameBox" id="usernameBox" placeholder="&nbsp;username" required/>
+                </td>
+            </tr>
+            <tr>
+                <td>Password: </td>
+                <td>
+                    <input type="password" name=" passwordBox" id="passwordBox" placeholder="&nbsp;password" required />
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <a href="HomePage.html"><button class="buttonStyle">LogIn</button></a>
+                    <a href="RegPage.html"><button class="buttonStyle">SignUp</button></a>
+                </td>
+            </tr>
+        </table>
+    </form> -->
+
+    <style type="text/css">
+        html {
+            height: 100%;
+        }
+        body {
+            margin:0;
+            padding:0;
+            font-family: sans-serif;
+            background: linear-gradient(#141e30, #243b55);
+        }
+
+        .reg-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 400px;
+            padding: 40px;
+            transform: translate(-50%, -50%);
+            background: rgba(0,0,0,.5);
+            box-sizing: border-box;
+            box-shadow: 0 15px 25px rgba(0,0,0,.6);
+            border-radius: 10px;
+        }
+
+        .reg-box h2 {
+            margin: 0 0 30px;
+            padding: 0;
+            color: #fff;
+            text-align: center;
+        }
+
+        .reg-box .user-box {
+            position: relative;
+        }
+
+        .reg-box .user-box input,select {
+            width: 100%;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #fff;
+            margin-bottom: 30px;
+            border: none;
+            border-bottom: 1px solid #fff;
+            outline: none;
+            background: transparent;
+        }
+        .reg-box .user-box label {
+            position: absolute;
+            top:0;
+            left: 0;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #fff;
+            pointer-events: none;
+            transition: .5s;
+        }
+
+        .reg-box .user-box input:focus ~ label,
+        .reg-box .user-box input:valid ~ label,
+        .reg-box .user-box select:focus ~ label,
+        .reg-box .user-box select:valid ~ label:hover {
+            top: -20px;
+            left: 0;
+            color: #03e9f4;
+            font-size: 12px;
+        }
+
+        .reg-box form a {
+            position: relative;
+            display: inline-block;
+            padding: 10px 20px;
+            color: #03e9f4;
+            font-size: 16px;
+            text-decoration: none;
+            text-transform: uppercase;
+            overflow: hidden;
+            transition: .5s;
+            margin-top: 40px;
+            letter-spacing: 4px
+        }
+
+        .reg-box a:hover {
+            background: #03e9f4;
+            color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #03e9f4,
+                        0 0 25px #03e9f4,
+                        0 0 50px #03e9f4,
+                        0 0 100px #03e9f4;
+        }
+
+        .reg-box a span {
+            position: absolute;
+            display: block;
+        }
+
+        .reg-box a span:nth-child(1) {
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #03e9f4);
+            animation: btn-anim1 1s linear infinite;
+        }
+
+        @keyframes btn-anim1 {
+            0% {
+                left: -100%;
+            }
+            50%,100% {
+                left: 100%;
+            }
+        }
+
+        .reg-box a span:nth-child(2) {
+            top: -100%;
+            right: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(180deg, transparent, #03e9f4);
+            animation: btn-anim2 1s linear infinite;
+            animation-delay: .25s
+        }
+
+        @keyframes btn-anim2 {
+            0% {
+                top: -100%;
+            }
+            50%,100% {
+                top: 100%;
+            }
+        }
+
+        .reg-box a span:nth-child(3) {
+            bottom: 0;
+            right: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(270deg, transparent, #03e9f4);
+            animation: btn-anim3 1s linear infinite;
+            animation-delay: .5s
+        }
+
+        @keyframes btn-anim3 {
+            0% {
+                right: -100%;
+            }
+            50%,100% {
+                right: 100%;
+            }
+        }
+
+        .reg-box a span:nth-child(4) {
+            bottom: -100%;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(360deg, transparent, #03e9f4);
+            animation: btn-anim4 1s linear infinite;
+            animation-delay: .75s
+        }
+
+        @keyframes btn-anim4 {
+            0% {
+                bottom: -100%;
+            }
+            50%,100% {
+                bottom: 100%;
+            }
+        }
+
+    </style>
+
+
+
+
+    <div class="reg-box">
+        <h2>Register</h2>
+        <form>
+          <div class="user-box">
+            <input type="text" id="fnameBox" name="fnameBox" required=""/>
+            <label>First Name</label>
+          </div>
+          <div class="user-box">
+            <input type="text" id="lnameBox" name="lnameBox" required="">
+            <label>Last Name</label>
+          </div>
+          <div class="user-box">
+            <input type="email" id="emailBox" name="emailBox" required="">
+            <label>Email</label>
+          </div>
+          <div class="user-box">
+            <select id="roleDropdown" name="roleDropdown" required="">
+                <option value="blank"></option>
+                <option value="Customer" >Customer</option>
+                <option value="Employee">Employee</option>
+                <option value="Admin">Admin</option>
+            </select>
+            
+            <label>Role</label>
+          </div>
+          <div class="user-box">
+            <input type="tel" id="contactNumberBox" name="contactNumberBox" required=""/>
+            <label>Contact Number</label>
+          </div>
+          <div class="user-box">
+            <input type="password" id="passwordBox" name="passwordBox" required=""/>
+            <label>Password</label>
+          </div>
+          <div class="user-box">
+            <input type="password" id="passwordBox2" name="passwordBox2" required=""/>
+            <label>Confirm Password</label>
+
+            <script>
+                p1 = document.getElementById(passwordBox).value;
+                p2 = document.getElementById(passwordBox2).value;
+
+                if (p1!=p2){
+                    alert("Password is doesn't match...\nPlease enter correct password");
+                }
+            </script>
+
+          </div>
+          <a href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Submit
+          </a>
+        </form>
+      </div>
+</div>
 </body>
 </html>

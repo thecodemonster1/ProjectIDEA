@@ -19,6 +19,8 @@ body{
 }
 
 
+
+
 /* Navbar links
 #navbar a {
   float: left;
@@ -51,11 +53,23 @@ body{
 }
 
 .navbar > a:hover{
-    background-color: #c6cdc8;
-    color: black;
+    /* background-color: #c6cdc8;
+    color: black; */
     font-size: 1.15em;
-
+    background: #03e9f4;
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
 }
+
+.navbar a.active {
+    background-color: #04AA6D!important;
+    color: #ffffff;
+}
+
 /*   */
 
 /*   */
@@ -163,4 +177,16 @@ body{
 div.showCase3{
     overflow: auto;
     white-space: nowrap;
+}
+
+
+/* --------------------------Login Page----------------------- */
+.loginContainer{
+    
+}
+.loginContainer table{
+    
+}
+.loginContainer input{
+    
 }
