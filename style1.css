@@ -53,20 +53,20 @@ body{
 }
 
 .navbar > a:hover{
-    /* background-color: #c6cdc8;
-    color: black; */
-    font-size: 1.15em;
-    background: #03e9f4;
-    color: rgb(0, 0, 0);
-    border-radius: 50px;
-    box-shadow: 0 0 5px #03e9f4,
-                0 0 25px #03e9f4,
-                0 0 50px #03e9f4,
-                0 0 100px #03e9f4;
+    background-color: #c6cdc8;
+    color: black;
+    /* font-size: 1.15em;
+    background: #000000;
+    color: rgb(255, 255, 255);
+    border-radius: 60px;
+    box-shadow: 0 10 15px #03e9f4,
+                0 10 15px #03e9f4,
+                0 10 15px #03e9f4,
+                0 10 15px #03e9f4; */
 }
 
 .navbar a.active {
-    background-color: #04AA6D!important;
+    background-color: #b5009d!important;
     color: #ffffff;
 }
 

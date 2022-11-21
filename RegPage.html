@@ -23,7 +23,7 @@
             <a href="pipes.html">Pipes</a>
             <a href="tools.html">Tools</a>
             <a href="electronics.html">Electronics</a>
-            <a href="RegPage.html">Register</a>
+            <a href="RegPage.html" class="active">Register</a>
             <a href="loginPage.html">LogIn</a>
             <a href="aboutUs.html">About</a>
             <a href="contactUs.html">Contact Us</a>
@@ -33,71 +33,6 @@
         </div>
     </nav>
 <br> <br>
-
-<!-- <h1 align="center">Register Now</h1> -->
-<!-- <form id="regForm" >
-
-    <table id="regTable" align="center">
-        <tr>
-            <td>First Name: </td>
-            <td>
-                <input type="text" id="fnameBox" name="fnameBox"/>
-            </td>
-        </tr>
-        <tr>
-            <td>Last Name: </td>
-            <td>
-                <input type="text" id="lnameBox" name="lnameBox"/>
-            </td>
-        </tr>
-        <tr>
-            <td>Email: </td>
-            <td>
-                <input type="email" id="emailBox" name="emailBox">
-            </td>
-        </tr>
-        <tr>
-            <td>Role: </td>
-            <td>
-                <select id="roleDropdown" name="roleDropdown">
-                    <option value="Customer" selected="selected">Customer</option>
-                    <option value="Employee">Employee</option>
-                    <option value="Admin">Admin</option>
-                </select>
-            </td>
-        </tr>
-        <tr>
-            <td>Contact Number: </td>
-            <td>
-                <input type="tel" id="contactNumberBox" name="contactNumberBox" />
-            </td>
-        </tr>
-        <tr>
-            <td>Password: </td>
-            <td>
-                <input type="password" id="passwordBox" name="passwordBox"/>
-            </td>
-        </tr>
-        <tr>
-            <td>Confirm password: </td>
-            <td>
-                <input type="password" id="passwordBox2" name="passwordBox2"/>
-            </td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td>
-                <input type="submit" id="sbtBtn" value="Submit"/>
-                <input type="reset" id="rstBtn" value="Reset" align="left"/>
-            </td>
-        </tr>
-
-    </table>
-
-
-    
-</form> -->
 
 <br> <br>
 <div class="registerContainer">
@@ -217,86 +152,6 @@
                         0 0 100px #03e9f4;
         }
 
-        .reg-box a span {
-            position: absolute;
-            display: block;
-        }
-
-        .reg-box a span:nth-child(1) {
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 2px;
-            background: linear-gradient(90deg, transparent, #03e9f4);
-            animation: btn-anim1 1s linear infinite;
-        }
-
-        @keyframes btn-anim1 {
-            0% {
-                left: -100%;
-            }
-            50%,100% {
-                left: 100%;
-            }
-        }
-
-        .reg-box a span:nth-child(2) {
-            top: -100%;
-            right: 0;
-            width: 2px;
-            height: 100%;
-            background: linear-gradient(180deg, transparent, #03e9f4);
-            animation: btn-anim2 1s linear infinite;
-            animation-delay: .25s
-        }
-
-        @keyframes btn-anim2 {
-            0% {
-                top: -100%;
-            }
-            50%,100% {
-                top: 100%;
-            }
-        }
-
-        .reg-box a span:nth-child(3) {
-            bottom: 0;
-            right: -100%;
-            width: 100%;
-            height: 2px;
-            background: linear-gradient(270deg, transparent, #03e9f4);
-            animation: btn-anim3 1s linear infinite;
-            animation-delay: .5s
-        }
-
-        @keyframes btn-anim3 {
-            0% {
-                right: -100%;
-            }
-            50%,100% {
-                right: 100%;
-            }
-        }
-
-        .reg-box a span:nth-child(4) {
-            bottom: -100%;
-            left: 0;
-            width: 2px;
-            height: 100%;
-            background: linear-gradient(360deg, transparent, #03e9f4);
-            animation: btn-anim4 1s linear infinite;
-            animation-delay: .75s
-        }
-
-        @keyframes btn-anim4 {
-            0% {
-                bottom: -100%;
-            }
-            50%,100% {
-                bottom: 100%;
-            }
-        }
-
     </style>
 
 
@@ -350,11 +205,8 @@
 
           </div>
           <a href="#">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            Submit
+            <!-- <input type="submit"> -->
+            Register
           </a>
         </form>
       </div>
