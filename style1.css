@@ -87,7 +87,7 @@ body{
     display: inline-block;
 }
 
-#logoHidden{
+/* #logoHidden{
     display: none;
     position: absolute;
     background-color: #a3a3a3;
@@ -95,107 +95,199 @@ body{
     border-radius: 20px;
     z-index: 1;
 
-}
-.homeBtn #logoHidden{
+} */
+/* .homeBtn #logoHidden{
     display: none;
     transition: display 2s;
-}
+} */
 
 
-.homeBtn:hover #logoHidden{
+/* .homeBtn:hover #logoHidden{
     display: block;
 
-}
+} */
 
-#logoBig{
+/* #logoBig{
     width: 100px;
     transition: width 2s;
     transition-timing-function: ease-out;
-}
+} */
 
-#logoBig:hover{
+/* #logoBig:hover{
     width: 200px;
-}
+} */
 
-#description{
+/* #description{
     padding: 15px;
     border: 1px solid white;
     background-color: black;
     color: white;
     border-radius: 20px;
-}
+} */
 
 
 
 
-#search{
+/* #search{
     display: none;
-}
+} */
 
-#searchImg:hover #search{
+/* #searchImg:hover #search{
     display: block;
 
+} */
+
+/* --------------------------ShowCases-----------------------  */
+
+.lmLinks .link a{
+    color: #258eff;
+    text-decoration: none;
+    /* text-align: center;
+    border: 1px solid black; */
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    /* text-decoration: none; */
+}
+.lmLinks .link{
+    display: inline-block;
 }
 
-.showCase{
+.link a:hover{
+    color: #258eff;
+    text-decoration: underline;
+}
+
+/* .lmLinks {
+    width: 0px;
+    height: 3px;
+    background: red;
+    transition: width 2s;
+    position: absolute;
+    bottom: -10px;
+  }
+  
+  div.lmLinks:hover {
+    width: 100%;
+  } */
+
+.link{
+    /* text-align: center;
+    width: 5px;
+    height: 10px;
+    background: red;
+    transition: width 5s;
+    position: relative;
+    left:0;
+    bottom: -10px; */
+    
+
+    /* text-decoration: none;
+    color: white;
+    transition: text-decoration 5s; */
+}
+  
+/* div.link:hover {
+    width: 100%;
+    width: max-content;
+    text-decoration: underline;
+} */
+
+/* .lmLinks div::after{
+    content: '';
+    height: 3px;
+    width: 0px;
+    left: 0;
+    background: #f50202;
+    position: absolute;
+    bottom: -10px;
+    transition: width 0.5s;
+}
+.lmLinks div:hover::after{
+    width: 100%;
+} */
+
+/* .lmLinks{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.lmLinks div.link{
+    display: inline-block;
+} */
+
+/* -----singleShowCaseTypeWhite------ */
+
+.ShowCaseTypeWhite{
     background-color: white;
     color: black;
 }
 
-.showCase a {
+/* .singleShowCaseTypeWhite a {
     text-decoration: none;
     color: white;
     transition: text-decoration 0.7s;
-}
+} */
 
-.showCase a:hover {
+/* .singleShowCaseTypeWhite a:hover {
     text-decoration: underline;
-}
+} */
 
-.showCase2{
+/* -----singleShowCaseTypeBlack------ */
+
+.ShowCaseTypeBlack{
     background-color: black;
     color: white;
 }
 
-.showCase2 a {
+/* .singleShowCaseTypeBlack a {
     text-decoration: none;
+    color: black;
+} */
+
+/* .singleShowCaseTypeBlack a:hover {
+    text-decoration: underline;
+} */
+
+/* -----manyShowCaseType------ */
+
+.manyShowCaseType{
+    background-color: black;
+    color: white; 
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-rows: minimax(30vw, 160px);
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    /* grid-gap: 50px;
+    font-size: 0.7em;
+    width: 100%; */
+    /* position: relative; */
+}
+
+.manyShowCaseType .manyShowCase{
+    display: inline-block;
+    border: 1px solid black;
+    
+    padding: 10px;
+}
+
+.manyShowCase.one{
+    background-color: white;
     color: black;
 }
 
-.showCase2 a:hover {
-    text-decoration: underline;
-}
-
-.lmLinks a{
-    color: #258eff;
-}
-
-.showCase3{
+.manyShowCase.two{
     background-color: black;
     color: white;
-    /*position: relative;*/
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: minimax(30vw, 160px);
-    grid-gap: 50px;
-    font-size: 0.7em;
-    width: 100%;
-    
 }
-
-div.showCase3{
-    overflow: auto;
-    white-space: nowrap;
-}
-
 
 /* --------------------------Login Page----------------------- */
-.loginContainer{
-    
-}
-.loginContainer table{
-    
-}
-.loginContainer input{
-    
-}
+
+
+
+/* --------------------------Horizontal scroll----------------------- */
+
