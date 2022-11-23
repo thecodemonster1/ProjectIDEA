@@ -117,7 +117,7 @@
                     font-size: 12px;
                 }
 
-                .login-box form a {
+                .login-box form button {
                     position: relative;
                     display: inline-block;
                     padding: 10px 20px;
@@ -128,13 +128,15 @@
                     overflow: hidden;
                     transition: .5s;
                     margin-top: 40px;
-                    letter-spacing: 4px
+                    letter-spacing: 4px;
+                    border-radius: 20px;
+                    background-color: transparent;
                 }
 
-                .login-box a:hover {
+                .login-box button:hover {
                     background: #03e9f4;
-                    color: #fff;
-                    border-radius: 5px;
+                    color: rgb(0, 0, 0);
+                    border-radius: 9px;
                     box-shadow: 0 0 5px #03e9f4,
                                 0 0 25px #03e9f4,
                                 0 0 50px #03e9f4,
@@ -158,9 +160,9 @@
                     <input type="password" name="" required="">
                     <label>Password</label>
                   </div>
-                  <a href="#">
+                  <button type="submit">
                     LogIn
-                  </a>
+                  </button>
                 </form>
               </div>
         </div>
