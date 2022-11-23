@@ -17,12 +17,14 @@ body{
 
 /* Style the navbar */
 .navbar {
+    font-size: 40px;
     background-color: black;
     padding: 0px;
     position:absolute;
     width:100%;
-    overflow: hidden;
-    height: 50px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    height: 48px;
     /* position: relative; */
 
 }
@@ -59,24 +61,26 @@ body{
     padding: 15px;
     text-decoration: none;
     color: #ffffff;
+    transition: margin 1s, box-shadow 0.5s;
 }
 
-.navbar > a:hover{
-    background-color: #c6cdc8;
+.navbar a:hover{
+    
     color: black;
-    /* font-size: 1.15em;
-    background: #000000;
-    color: rgb(255, 255, 255);
-    border-radius: 60px;
-    box-shadow: 0 10 15px #03e9f4,
-                0 10 15px #03e9f4,
-                0 10 15px #03e9f4,
-                0 10 15px #03e9f4; */
+    /* font-size: 1.15em; */
+    background: #ff32fc;
+    
+    /* border-radius: 20px; */
+    box-shadow: 0 0 5px #ff32fc,
+                0 0 25px #ff32fc,
+                0 0 50px #ff32fc,
+                0 0 100px #ff32fc;
+    margin: 0 20px 0 20px;
 }
 
 .navbar a.active {
-    background-color: #b5009d!important;
-    color: #ffffff;
+    background-color: #ff32fc!important;
+    color: #000000;
 }
 
 /*   */
@@ -147,6 +151,7 @@ body{
     overflow-x: hidden;
     overflow-y: hidden;
     white-space: nowrap;
+    transition: font-size 1s;
     /* text-decoration: none; */
 }
 .lmLinks .link{
@@ -155,67 +160,10 @@ body{
 
 .link a:hover{
     color: #258eff;
+    font-size: 1.2em;
     text-decoration: underline;
 }
 
-/* .lmLinks {
-    width: 0px;
-    height: 3px;
-    background: red;
-    transition: width 2s;
-    position: absolute;
-    bottom: -10px;
-  }
-  
-  div.lmLinks:hover {
-    width: 100%;
-  } */
-
-.link{
-    /* text-align: center;
-    width: 5px;
-    height: 10px;
-    background: red;
-    transition: width 5s;
-    position: relative;
-    left:0;
-    bottom: -10px; */
-    
-
-    /* text-decoration: none;
-    color: white;
-    transition: text-decoration 5s; */
-}
-  
-/* div.link:hover {
-    width: 100%;
-    width: max-content;
-    text-decoration: underline;
-} */
-
-/* .lmLinks div::after{
-    content: '';
-    height: 3px;
-    width: 0px;
-    left: 0;
-    background: #f50202;
-    position: absolute;
-    bottom: -10px;
-    transition: width 0.5s;
-}
-.lmLinks div:hover::after{
-    width: 100%;
-} */
-
-/* .lmLinks{
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-}
-
-.lmLinks div.link{
-    display: inline-block;
-} */
 
 /* -----singleShowCaseTypeWhite------ */
 
@@ -224,16 +172,6 @@ body{
     color: black;
 }
 
-/* .singleShowCaseTypeWhite a {
-    text-decoration: none;
-    color: white;
-    transition: text-decoration 0.7s;
-} */
-
-/* .singleShowCaseTypeWhite a:hover {
-    text-decoration: underline;
-} */
-
 /* -----singleShowCaseTypeBlack------ */
 
 .ShowCaseTypeBlack{
@@ -241,48 +179,59 @@ body{
     color: white;
 }
 
-/* .singleShowCaseTypeBlack a {
-    text-decoration: none;
-    color: black;
-} */
-
-/* .singleShowCaseTypeBlack a:hover {
-    text-decoration: underline;
-} */
-
 /* -----manyShowCaseType------ */
 
 .manyShowCaseType{
     background-color: black;
     color: white; 
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-auto-rows: minimax(30vw, 160px);
+    display: inline-block;
+    /* grid-template-columns: auto auto auto; */
+    width: 100%;
+    height: 20%;
+    /* grid-auto-rows: minimax(30vw, 160px); */
+    
 
-    overflow-x: scroll;
-    overflow-y: hidden;
+    /* overflow-x: scroll;
+    overflow-y: hidden; */
+    overflow: auto;
     white-space: nowrap;
-    /* grid-gap: 50px;
-    font-size: 0.7em;
-    width: 100%; */
-    /* position: relative; */
 }
 
 .manyShowCaseType .manyShowCase{
     display: inline-block;
-    border: 1px solid black;
+    /* border: 1px solid rgb(130, 77, 77); */
     
-    padding: 10px;
+    padding: 0px 30px 0px 30px ;
+    transition: margin 1s;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid white;
+}
+
+.manyShowCaseType .manyShowCase:hover{
+    background: #dfd54f;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    box-shadow: 0 0 5px #dfd54f,
+                0 0 25px #dfd54f,
+                0 0 50px #dfd54f,
+                0 0 100px #dfd54f;
+    margin: 20px;
+    border: none;
+    padding: 0px 30px 0px 30px ;
 }
 
 .manyShowCase.one{
     background-color: white;
     color: black;
+    padding: 0px 30px 0px 30px ;
 }
 
 .manyShowCase.two{
     background-color: black;
     color: white;
+    padding: 0px 30px 0px 30px ;
 }
 
 /* --------------------------Login Page----------------------- */
