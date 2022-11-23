@@ -34,31 +34,8 @@
 <br> <br>
 <div class="registerContainer">
             
-    <!-- <form id="loginForm">
-        <table align="center" id="loginTable" cellspacing="0">
-            <tr>
-                <td>Username: </td>
-                <td>
-                    <input type="text" name="usernameBox" id="usernameBox" placeholder="&nbsp;username" required/>
-                </td>
-            </tr>
-            <tr>
-                <td>Password: </td>
-                <td>
-                    <input type="password" name=" passwordBox" id="passwordBox" placeholder="&nbsp;password" required />
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>
-                    <a href="HomePage.html"><button class="buttonStyle">LogIn</button></a>
-                    <a href="RegPage.html"><button class="buttonStyle">SignUp</button></a>
-                </td>
-            </tr>
-        </table>
-    </form> -->
 
-    <style type="text/css">
+    <style>
 
         .reg-box {
             position: absolute;
@@ -109,14 +86,14 @@
         .reg-box .user-box input:focus ~ label,
         .reg-box .user-box input:valid ~ label,
         .reg-box .user-box select:focus ~ label,
-        .reg-box .user-box select:target ~ label {
+        .reg-box .user-box select:valid ~ label {
             top: -20px;
             left: 0;
             color: #03e9f4;
             font-size: 12px;
         }
 
-        .reg-box form a {
+        .reg-box form button {
             position: relative;
             display: inline-block;
             padding: 10px 20px;
@@ -127,13 +104,15 @@
             overflow: hidden;
             transition: .5s;
             margin-top: 40px;
-            letter-spacing: 4px
+            letter-spacing: 4px;
+            border-radius: 20px;
+            background-color: transparent;
         }
 
-        .reg-box a:hover {
+        .reg-box button:hover {
             background: #03e9f4;
-            color: #fff;
-            border-radius: 5px;
+            color: rgb(0, 0, 0);
+            border-radius: 9px;
             box-shadow: 0 0 5px #03e9f4,
                         0 0 25px #03e9f4,
                         0 0 50px #03e9f4,
@@ -147,7 +126,7 @@
 
     <div class="reg-box">
         <h2>Register</h2>
-        <form>
+        <form action="" method="post">
           <div class="user-box">
             <input type="text" id="fnameBox" name="fnameBox" required=""/>
             <label>First Name</label>
@@ -157,7 +136,7 @@
             <label>Last Name</label>
           </div>
           <div class="user-box">
-            <input type="email" id="emailBox" name="emailBox" required="">
+            <input type="text" id="emailBox" name="emailBox" required="">
             <label>Email</label>
           </div>
           <div class="user-box">
@@ -183,19 +162,18 @@
             <label>Confirm Password</label>
 
             <script>
-                p1 = document.getElementById(passwordBox).value;
-                p2 = document.getElementById(passwordBox2).value;
+                // p1 = document.getElementById(passwordBox).value;
+                // p2 = document.getElementById(passwordBox2).value;
 
-                if (p1!=p2){
-                    alert("Password is doesn't match...\nPlease enter correct password");
-                }
+                // if (p1!=p2){
+                //     alert("Password is doesn't match...\nPlease enter correct password");
+                // }
             </script>
 
           </div>
-          <a href="#">
-            <!-- <input type="submit"> -->
+          <button type="submit">
             Register
-          </a>
+          </button>
         </form>
       </div>
 </div>
