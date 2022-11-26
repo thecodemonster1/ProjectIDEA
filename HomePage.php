@@ -19,14 +19,14 @@
                         <img src="Images/logo.png" width="16px" id="logo"/>
                         Home
                     </a>
-                    <a href="storage.html" >Store</a>
-                    <a href="tools.html">Tools</a>
-                    <a href="electronics.html">Electronics</a>
-                    <a href="RegPage.html">Register</a>
-                    <a href="loginPage.html">LogIn</a>
-                    <a href="aboutUs.html" >About</a>
-                    <a href="contactUs.html">Contact Us</a>
-                    <a href="search.html" id="searchImg" ><img src="Images/search.png" width="16px"></a>
+                    <a href="storage.php" >Store</a>
+                    <a href="tools.php">Tools</a>
+                    <a href="electronics.php">Electronics</a>
+                    <a href="RegPage.php">Register</a>
+                    <a href="loginPage.php">LogIn</a>
+                    <a href="aboutUs.php" >About</a>
+                    <a href="contactUs.php">Contact Us</a>
+                    <a href="search.php" id="searchImg" ><img src="Images/search.png" width="16px"></a>
                     <a href="cart.php" id="shoppingCart" ><img src="Images/shoppingCart.png" width="16px"></a>
                 
                 </div>
