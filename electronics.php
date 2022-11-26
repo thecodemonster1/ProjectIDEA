@@ -13,7 +13,7 @@
 <body>
 <nav>
         <div class="navbar" id="navbar" align="center" style="font-size:0.7em;padding-top: -5px;">
-            <a href="HomePage.html" class="homeBtn" >
+            <a href="HomePage.php" class="homeBtn" >
                 <img src="Images/logo.png" width="16px" id="logo"/>
                 Home
             </a>
