@@ -13,7 +13,9 @@
 <body>
 <nav>
         <div class="navbar" id="navbar" align="center" style="font-size:0.7em;padding-top: -5px;">
-            <a href="HomePage.php" class="homeBtn" >
+            <a href="HomePage.php
+            
+            " class="homeBtn" >
                 <img src="Images/logo.png" width="16px" id="logo"/>
                 Home
             </a>
@@ -126,7 +128,7 @@
 
     <div class="reg-box">
         <h2>Register</h2>
-        <form action="" method="post">
+        <form action="RegHandler.php" method="post">
           <div class="user-box">
             <input type="text" id="fnameBox" name="fnameBox" required=""/>
             <label>First Name</label>
@@ -142,7 +144,7 @@
           <div class="user-box">
             <select id="roleDropdown" name="roleDropdown" required="">
                 <option value="blank"></option>
-                <option value="Customer" >Customer</option>
+                <option value="Customer">Customer</option>
                 <option value="Employee">Employee</option>
                 <option value="Admin">Admin</option>
             </select>
@@ -171,11 +173,12 @@
             </script>
 
           </div>
-          <button type="submit">
+          <button type="submit" name="submitBtn">
             Register
           </button>
         </form>
       </div>
+      
 </div>
 </body>
 </html>
