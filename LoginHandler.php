@@ -6,7 +6,7 @@
                 $valid = false;
                 $con = mysqli_connect("localhost","root","","projectmchDB");
                 if(!$con){ // Error Handling part 
-                    alert("Could not connect to DB server. Please try again");
+                    die("Could not connect to DB server. Please try again");
                 }
                 $sql = " SELECT * FROM `userTable` WHERE  `email` = '".$Username."' and  `password` = '".$Password."'";
                 $result = mysqli_query($con,$sql);
