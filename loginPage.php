@@ -41,29 +41,6 @@
 
         <div class="loginContainer">
             
-            <!-- <form id="loginForm">
-                <table align="center" id="loginTable" cellspacing="0">
-                    <tr>
-                        <td>Username: </td>
-                        <td>
-                            <input type="text" name="usernameBox" id="usernameBox" placeholder="&nbsp;username" required/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Password: </td>
-                        <td>
-                            <input type="password" name=" passwordBox" id="passwordBox" placeholder="&nbsp;password" required />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>
-                            <a href="HomePage.html"><button class="buttonStyle">LogIn</button></a>
-                            <a href="RegPage.html"><button class="buttonStyle">SignUp</button></a>
-                        </td>
-                    </tr>
-                </table>
-            </form> -->
 
             <style type="text/css">
 
@@ -150,12 +127,9 @@
                 
             </style>
 
-
-
-
             <div class="login-box">
                 <h2>Login</h2>
-                <form>
+                <form action="LoginHandler.php" method="post">
                   <div class="user-box">
                     <input type="text" name="UsernameText" required="">
                     <label>Username</label>
@@ -169,33 +143,6 @@
                   </button>
                 </form>
             </div>
-
-            <?php 
-            if(isset($_POST["submitBtn"])){
-                // Read values from the text feild 
-                $Username = $_POST["UsernameText"];
-                $Password = $_POST["PasswordText"];
-                $valid = false;
-                $con = mysqli_connect("localhost","root","","projectmchDB");
-                if(!$con){ // Error Handling part 
-                    alert("Could not connect to DB server. Please try again");
-                }
-                $sql = " SELECT * FROM `userTable` WHERE  `email` = '".$Username."' and  `password` = '".$Password."'";
-                $result = mysqli_query($con,$sql);
-                if(mysqli_num_rows($result) > 0){
-                    $valid = true;
-                } else {
-                    $valid = false;
-                }
-                if($valid) {
-                $_SESSION["userName"] = $Username;
-                header("Location:HomePage.php");
-                } else {
-                echo "Please check your Username and password";
-                }
-            } 
-          ?>
-
         </div>
 
     </body>
