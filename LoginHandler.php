@@ -19,7 +19,8 @@
                 $_SESSION["userName"] = $Username;
                 header("Location:HomePage.php");
                 } else {
-                echo "Please check your Username and password";
+                    echo '<script> alert ("Please check your Username and password") </script>';
+                    header("Location:loginPage.php");
                 }
             } 
           ?>

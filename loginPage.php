@@ -40,8 +40,6 @@
         <br> <br>
 
         <div class="loginContainer">
-            
-
             <style type="text/css">
 
                 .login-box {
@@ -130,17 +128,21 @@
             <div class="login-box">
                 <h2>Login</h2>
                 <form action="LoginHandler.php" method="post">
-                  <div class="user-box">
-                    <input type="text" name="UsernameText" required="">
-                    <label>Username</label>
-                  </div>
-                  <div class="user-box">
-                    <input type="password" name="PasswordText" required="">
-                    <label>Password</label>
-                  </div>
-                  <button type="submit" name="submitBtn">
-                    LogIn
-                  </button>
+                    <div class="user-box">
+                        <input type="text" name="UsernameText" required="">
+                        <label>Username</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="password" name="PasswordText" required="">
+                        <label>Password</label>
+                    </div>
+                    <button onclick="window.location.href='RegPage.php';">
+                        Register
+                    </button>
+                  
+                    <button type="submit" name="submitBtn">
+                        LogIn
+                    </button>
                 </form>
             </div>
         </div>
