@@ -143,10 +143,11 @@
           </div>
           <div class="user-box">
             <select id="roleDropdown" name="roleDropdown" required="">
-                <option value="blank"></option>
-                <option value="Customer">Customer</option>
+                <!-- <option value="blank" ></option> -->
                 <option value="Employee">Employee</option>
+                <option value="Customer">Customer</option>
                 <option value="Admin">Admin</option>
+                
             </select>
             
             <label>Role</label>
