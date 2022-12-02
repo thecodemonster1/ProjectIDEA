@@ -19,370 +19,160 @@
                         <img src="Images/logo.png" width="16px" id="logo"/>
                         Home
                     </a>
-                    <a href="storage.php" >Store</a>
-            <a href="tools.php">Tools</a>
-            <a href="electronics.php">Electronics</a>
-            <a href="RegPage.php">Register</a>
-            <a href="loginPage.php">LogIn</a>
-            <a href="aboutUs.php" >About</a>
-            <a href="contactUs.php">Contact Us</a>
-            <a href="search.php" id="searchImg" ><img src="Images/search.png" width="16px"></a>
-            <a href="cart.php" id="shoppingCart" ><img src="Images/shoppingCart.png" width="16px"></a>
+                    <a href="RegPage.php">Register</a>
+                    <a href="loginPage.php">LogIn</a>
+                    <a href="aboutUs.php" >About</a>
                 
                 </div>
             </nav>
             
 
-        <!-- <?php 
-            $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/php/";
-            include($IPATH."headernav.html");
-        ?> -->
-
         <br>
 
-        
 
-    <!--    1st showcase -->
-        <div class="ShowCaseTypeWhite"  align="center">
-            <br>
-            <h1 style="font-size:3em;"><b>Cement</b></h1>
-            <p>Engineer's Choice.</p>
-            <div class="lmLinks">
-                <div class="link one">
-                    <a href="#" target="_blank">Learn more</a> <emp style="color:#258eff">> </emp>
-                </div>
-                
-                &nbsp;&nbsp;
-                <div class="link two">
-                    <a href="">Buy</a> <emp style="color:#258eff">> </emp>
-                </div>
-                
-            </div>
-            <br> <br>
-            <img src="Images/cement3.jpeg" width="50%">
-            <br>
-        </div>
-        
-    <!--    2nd Showcase-->
+<!--    2nd Showcase-->
+ <!-- <a href="deleteContent.php?id='.$row["itemid"].'">Delete </a> -->
 
+ <div>
+    <br>
+    <h1 style="font-size:3em;" id="farmingItems"><b>Farming Items</b></h1>
+    <p>Farmer. Tools.</p>
+    <p style="font-size:0.8em;color:rgb(190, 201, 126)">Scroll horizontally ---></p>
+    <br>
+</div>
+
+<div class="manyShowCaseType" >
+                        
+<?php
+
+include 'config.php';
+                $sql = "SELECT * FROM `adTable`;";
+                $result = mysqli_query($con,$sql);
+                if(mysqli_num_rows($result) > 0 ){
+                  while($row = mysqli_fetch_assoc($result)){
+                    echo '
+                    
+                <!--        2_a showcase-->
+                        <div class="manyShowCase one" >
+                            <br>
+                            <h1 style="font-size:3em;"><b>Iron Rod</b></h1>
+                            <p>Strong. Steel. <br><br>
+                            Price: ###### <br><br>
+                            Available Stock: #### <br>
+                            </p>
+                            <div class="lmLinks">
+                                <div class="link one">
+                                <a href="deletePost.php?id='.$row["adID"].'">Delete </a> <emp style="color:#258eff">> </emp>
+                                </div>
+                               
+                                
+                            </div>
+                            <br> <br>
+                            <img src="Images/ironRod1.jpeg" width="300px" height="200px">
+                            <br>
+                        </div>
+                <!--        2_b Showcase-->
+                        <div class="manyShowCase two"  align="center">
+                            <br>
+                            <h1 style="font-size:3em;"><b>Cement</b></h1>
+                            <p>Engineer&#39;s Choice. <br><br>
+                            Price: ###### <br><br>
+                            Available Stock: #### <br></p>
+                            <div class="lmLinks">
+                                <div class="link one">
+                                <a href="deletePost.php?id='.$row["adID"].'">Delete </a><emp style="color:#258eff">> </emp>
+                                </div>
+                                
+                            </div>
+                            <br> <br>
+                            <img src="Images/cement2.jpeg" width="300px" height="200px">
+                            <br>
+                        </div>
+                    ';
+            }
+          }
+
+
+?>
+
+</div>
+                
+                
+                
+                    
+                
+                    
+<!--    4th Showcase div-->
     <div>
         <br>
-            <h1 style="font-size:3em;"><b>Farming Items</b></h1>
-            <p>Farmer. Tools.</p>
+            <h1 style="font-size:3em;" id="buildingItems"><b>Building construction</b></h1>
+            <p>Tools. Construction.</p>
             <p style="font-size:0.8em;color:rgb(190, 201, 126)">Scroll horizontally ---></p>
             <br>
     </div>
     <div class="manyShowCaseType" >
         
-<!--        2_a showcase-->
-        <div class="manyShowCase one" >
-            <br>
-            <h1 style="font-size:3em;"><b>Iron Rod</b></h1>
-            <p>Strong. Steel.</p>
-            <div class="lmLinks">
-                <div class="link one">
-                    <a href="#" target="_blank">Learn more</a> <emp style="color:#258eff">> </emp>
-                </div>
-                
-                &nbsp;&nbsp;
-                <div class="link two">
-                    <a href="">Buy</a> <emp style="color:#258eff">> </emp>
-                </div>
-                
-            </div>
-            <br> <br>
-            <img src="Images/ironRod1.jpeg" width="300px" height="200px">
-            <br>
-        </div>
-<!--        2_b Showcase-->
-        <div class="manyShowCase two"  align="center">
-            <br>
-            <h1 style="font-size:3em;"><b>Cement</b></h1>
-            <p>Engineer's Choice.</p>
-            <div class="lmLinks">
-                <div class="link one">
-                    <a href="#" target="_blank">Learn more</a> <emp style="color:#258eff">> </emp>
-                </div>
-                
-                &nbsp;&nbsp;
-                <div class="link two">
-                    <a href="">Buy</a> <emp style="color:#258eff">> </emp>
-                </div>
-                
-            </div>
-            <br> <br>
-            <img src="Images/cement2.jpeg" width="300px" height="200px">
-            <br>
-        </div>
+    <?php
 
-<!--        2_c Showcase-->
-        <div class="manyShowCase one">
-            <br>
-            <h1 style="font-size:3em;"><b>Water Taps</b></h1>
-            <p>Save. Water.</p>
-            <div class="lmLinks">
-                <div class="link one">
-                    <a href="#" target="_blank">Learn more</a> <emp style="color:#258eff">> </emp>
-                </div>
-                &nbsp;&nbsp;
-                <div class="link two">
-                    <a href="">Buy</a> <emp style="color:#258eff">> </emp>
-                </div>
-                
-            </div>
-            <br> <br>
-            <img src="Images/tap1.jpeg" width="300px" height="200px">
-            <br>
-        </div>
-
-<!--        2_d showcase-->
-        <div class="manyShowCase two" >
-            <br>
-            <h1 style="font-size:3em;"><b>Door Lock</b></h1>
-            <p>Believe. Safe.</p>
-            <div class="lmLinks">
-                <div class="link one">
-                    <a href="#" target="_blank">Learn more</a> <emp style="color:#258eff">> </emp>
-                </div>
-                
-                &nbsp;&nbsp;
-                <div class="link two">
-                    <a href="">Buy</a> <emp style="color:#258eff">> </emp>
-                </div>
-                
-            </div>
-            <br> <br>
-            <img src="Images/doorLock1.jpeg" width="300px" height="200px">
-            <br>
-        </div>
-<!--        2_e Showcase-->
-        <div class="manyShowCase one"  align="center">
-            <br>
-            <h1 style="font-size:3em;"><b>Cement</b></h1>
-            <p>Engineer's Choice.</p>
-            <div class="lmLinks">
-                <div class="link one">
-                    <a href="#" target="_blank">Learn more</a> <emp style="color:#258eff">> </emp>
-                </div>
-                
-                &nbsp;&nbsp;
-                <div class="link two">
-                    <a href="">Buy</a> <emp style="color:#258eff">> </emp>
-                </div>
-                
-            </div>
-            <br> <br>
-            <img src="Images/cement2.jpeg" width="300px" height="200px">
-            <br>
-        </div>
-
-<!--        2_f Showcase-->
-        <div class="manyShowCase two">
-            <br>
-            <h1 style="font-size:3em;"><b>Water Taps</b></h1>
-            <p>Save. Water.</p>
-            <div class="lmLinks">
-                <div class="link one">
-                    <a href="#" target="_blank">Learn more</a> <emp style="color:#258eff">> </emp>
-                </div>
-                &nbsp;&nbsp;
-                <div class="link two">
-                    <a href="">Buy</a> <emp style="color:#258eff">> </emp>
-                </div>
-                
-            </div>
-            <br> <br>
-            <img src="Images/tap1.jpeg" width="300px" height="200px">
-            <br>
-        </div>
-    </div>
+include 'config.php';
+$sql = "SELECT * FROM `adTable`;";
+$result = mysqli_query($con,$sql);
+if(mysqli_num_rows($result) > 0 ){
+    while($row = mysqli_fetch_assoc($result)){
+    echo '
+                    
+                <!--        2_a showcase-->
+                        <div class="manyShowCase one" >
+                            <br>
+                            <h1 style="font-size:3em;"><b>Iron Rod</b></h1>
+                            <p>Strong. Steel. <br><br>
+                            Price: ###### <br><br>
+                            Available Stock: #### <br>
+                            </p>
+                            <div class="lmLinks">
+                                <div class="link one">
+                                <a href="deletePost.php?id='.$row["adID"].'">Delete </a> <emp style="color:#258eff">> </emp>
+                                </div>
+                                
+                            </div>
+                            <br> <br>
+                            <img src="Images/ironRod1.jpeg" width="300px" height="200px">
+                            <br>
+                        </div>
+                <!--        2_b Showcase-->
+                        <div class="manyShowCase two"  align="center">
+                            <br>
+                            <h1 style="font-size:3em;"><b>Cement</b></h1>
+                            <p>Engineer&#39;s Choice. <br><br>
+                            Price: ###### <br><br>
+                            Available Stock: #### <br></p>
+                            <div class="lmLinks">
+                                <div class="link one">
+                                <a href="deletePost.php?id='.$row["adID"].'">Delete </a> <emp style="color:#258eff">> </emp>
+                                </div>
+                                
+                            </div>
+                            <br> <br>
+                            <img src="Images/cement2.jpeg" width="300px" height="200px">
+                            <br>
+                        </div>
+                    ';
+            }
+          }
 
 
+?>
 
-    <!--    3rd Showcase-->
-        <div class="ShowCaseTypeWhite" >
-            <br>
-            <h1 style="font-size:3em;"><b>S-Lon</b></h1>
-            <p>Water. Life.</p>
-            <div class="lmLinks">
-                <div class="link one">
-                    <a href="https://www.ultratechcement.lk/" target="_blank">Learn more</a> <emp style="color:#258eff">> </emp>
-                </div>
-                
-                &nbsp;&nbsp;
-                <div class="link">
-                    <a href="">Buy</a> <emp style="color:#258eff">> </emp>
-                </div>
-                
-            </div>
-            <br> <br>
-            <!--        We need to change this part-->
-            <img src="Images/slonLogo.png" width="50%">
-            <br>
-        </div>
+</div>
+
+ 
+    
+
 
     
-    <!--    4th Showcase div-->
-        <div>
-            <br>
-                <h1 style="font-size:3em;"><b>Building construction</b></h1>
-                <p>Tools. Construction.</p>
-                <p style="font-size:0.8em;color:rgb(190, 201, 126)">Scroll horizontally ---></p>
-                <br>
-        </div>
-        <div class="manyShowCaseType" >
-            
-    <!--        4_a showcase-->
-            <div class="manyShowCase one" >
-                <br>
-                <h1 style="font-size:3em;"><b>Iron Rod</b></h1>
-                <p>Strong. Steel.</p>
-                <div class="lmLinks">
-                    <div class="link one">
-                        <a href="#" target="_blank">Learn more</a> <emp style="color:#258eff">> </emp>
-                    </div>
-                    
-                    &nbsp;&nbsp;
-                    <div class="link two">
-                        <a href="">Buy</a> <emp style="color:#258eff">> </emp>
-                    </div>
-                    
-                </div>
-                <br> <br>
-                <img src="Images/ironRod1.jpeg" width="300px" height="200px">
-                <br>
-            </div>
-    <!--        4_b Showcase-->
-            <div class="manyShowCase two"  align="center">
-                <br>
-                <h1 style="font-size:3em;"><b>Cement</b></h1>
-                <p>Engineer's Choice.</p>
-                <div class="lmLinks">
-                    <div class="link one">
-                        <a href="#" target="_blank">Learn more</a> <emp style="color:#258eff">> </emp>
-                    </div>
-                    
-                    &nbsp;&nbsp;
-                    <div class="link two">
-                        <a href="">Buy</a> <emp style="color:#258eff">> </emp>
-                    </div>
-                    
-                </div>
-                <br> <br>
-                <img src="Images/cement2.jpeg" width="300px" height="200px">
-                <br>
-            </div>
-
-    <!--        4_c Showcase-->
-            <div class="manyShowCase one">
-                <br>
-                <h1 style="font-size:3em;"><b>Water Taps</b></h1>
-                <p>Save. Water.</p>
-                <div class="lmLinks">
-                    <div class="link one">
-                        <a href="#" target="_blank">Learn more</a> <emp style="color:#258eff">> </emp>
-                    </div>
-                    &nbsp;&nbsp;
-                    <div class="link two">
-                        <a href="">Buy</a> <emp style="color:#258eff">> </emp>
-                    </div>
-                    
-                </div>
-                <br> <br>
-                <img src="Images/tap1.jpeg" width="300px" height="200px">
-                <br>
-            </div>
-
-    <!--        4_d showcase-->
-            <div class="manyShowCase two" >
-                <br>
-                <h1 style="font-size:3em;"><b>Door Lock</b></h1>
-                <p>Believe. Safe.</p>
-                <div class="lmLinks">
-                    <div class="link one">
-                        <a href="#" target="_blank">Learn more</a> <emp style="color:#258eff">> </emp>
-                    </div>
-                    
-                    &nbsp;&nbsp;
-                    <div class="link two">
-                        <a href="">Buy</a> <emp style="color:#258eff">> </emp>
-                    </div>
-                    
-                </div>
-                <br> <br>
-                <img src="Images/doorLock1.jpeg" width="300px" height="200px">
-                <br>
-            </div>
-    <!--        4_e Showcase-->
-            <div class="manyShowCase one"  align="center">
-                <br>
-                <h1 style="font-size:3em;"><b>Cement</b></h1>
-                <p>Engineer's Choice.</p>
-                <div class="lmLinks">
-                    <div class="link one">
-                        <a href="#" target="_blank">Learn more</a> <emp style="color:#258eff">> </emp>
-                    </div>
-                    
-                    &nbsp;&nbsp;
-                    <div class="link two">
-                        <a href="">Buy</a> <emp style="color:#258eff">> </emp>
-                    </div>
-                    
-                </div>
-                <br> <br>
-                <img src="Images/cement2.jpeg" width="300px" height="200px">
-                <br>
-            </div>
-
-    <!--        4_f Showcase-->
-            <div class="manyShowCase two">
-                <br>
-                <h1 style="font-size:3em;"><b>Water Taps</b></h1>
-                <p>Save. Water.</p>
-                <div class="lmLinks">
-                    <div class="link one">
-                        <a href="#" target="_blank">Learn more</a> <emp style="color:#258eff">> </emp>
-                    </div>
-                    &nbsp;&nbsp;
-                    <div class="link two">
-                        <a href="">Buy</a> <emp style="color:#258eff">> </emp>
-                    </div>
-                    
-                </div>
-                <br> <br>
-                <img src="Images/tap1.jpeg" width="300px" height="200px">
-                <br>
-            </div>
-        </div>
-
-
-    <!--    5th Showcase div-->
-    <div class="ShowCaseTypeBlack" >
-        <br>
-        <h1 style="font-size:3em;"><b>Sanstha Cement(Holcim)</b></h1>
-        <p>Build. Strongly.</p>
-        <div class="lmLinks">
-            <div class="link one">
-                <a href="https://www.ultratechcement.lk/" target="_blank">Learn more</a> <emp style="color:#258eff">> </emp>
-            </div>
-            
-            &nbsp;&nbsp;
-            <div class="link two">
-                <a href="">Buy</a> <emp style="color:#258eff">> </emp>
-            </div>
-            
-        </div>
-        <br> <br>
-        <img src="Images/sansthaCementImage.jpeg" width="50%">
-        <br>
-    </div>
-
         
-        <!-- <?php 
-            include($IPATH."footer.html");
-        ?> -->
 
-        <div class="footer">
+        <div class="footer" style="background: rgba(0, 0, 0, 1); padding-top: 40px;">
             <img src="Images/logo.png" width="10%" alt="Logo"/>
             <p>MC Hardware</p>
         <!--        <h1>MC Hardware</h1>-->
