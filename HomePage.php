@@ -29,6 +29,26 @@
 
         <br>
 
+        <?php 
+                include 'Config.php';
+                $sql = "SELECT * FROM `item` WHERE `email` = '".$_SESSION["userName"]."';";
+                $result = mysqli_query($con,$sql);
+                if(mysqli_num_rows($result) > 0 ){
+                  while($row = mysqli_fetch_assoc($result)){
+                    echo "
+              <tr>
+                <td><div class='imagescontainer'><img src='".$row["path"]."'  width = '160' height = '164' ></div></td>
+                <td> ".$row["description"]." </td>
+                <td><a href='updateStuff.php?id=".$row["itemid"]."'><img src='images/edit2.png' alt='' width='32' height='34' />Edit</a></td>
+                <td><a href='editContent.php'><img src='images/delete.jpg' alt='' width='32' height='34'/></a>
+                <a href='deleteContent.php?id=".$row["itemid"]."'>Delete </a></td>
+                <td><p?<img src='images/publish2.png' alt='' width='32' height='34'/>
+                <a href='addcart.php?id=".$row["itemid"]."'>Add to cart</a></p></td>
+              </tr> ";
+            }
+          }
+              ?>
+
 
 <!--    2nd Showcase-->
  <!-- <a href="deleteContent.php?id='.$row["itemid"].'">Delete </a> -->
@@ -60,13 +80,7 @@ include 'config.php';
                             Price: ###### <br><br>
                             Available Stock: #### <br>
                             </p>
-                            <div class="lmLinks">
-                                <div class="link one">
-                                <a href="deletePost.php?id='.$row["adID"].'">Delete </a> <emp style="color:#258eff">> </emp>
-                                </div>
-                               
-                                
-                            </div>
+                            
                             <br> <br>
                             <img src="Images/ironRod1.jpeg" width="300px" height="200px">
                             <br>
@@ -78,12 +92,7 @@ include 'config.php';
                             <p>Engineer&#39;s Choice. <br><br>
                             Price: ###### <br><br>
                             Available Stock: #### <br></p>
-                            <div class="lmLinks">
-                                <div class="link one">
-                                <a href="deletePost.php?id='.$row["adID"].'">Delete </a><emp style="color:#258eff">> </emp>
-                                </div>
-                                
-                            </div>
+                            
                             <br> <br>
                             <img src="Images/cement2.jpeg" width="300px" height="200px">
                             <br>
@@ -129,12 +138,7 @@ if(mysqli_num_rows($result) > 0 ){
                             Price: ###### <br><br>
                             Available Stock: #### <br>
                             </p>
-                            <div class="lmLinks">
-                                <div class="link one">
-                                <a href="deletePost.php?id='.$row["adID"].'">Delete </a> <emp style="color:#258eff">> </emp>
-                                </div>
-                                
-                            </div>
+                            
                             <br> <br>
                             <img src="Images/ironRod1.jpeg" width="300px" height="200px">
                             <br>
@@ -146,12 +150,7 @@ if(mysqli_num_rows($result) > 0 ){
                             <p>Engineer&#39;s Choice. <br><br>
                             Price: ###### <br><br>
                             Available Stock: #### <br></p>
-                            <div class="lmLinks">
-                                <div class="link one">
-                                <a href="deletePost.php?id='.$row["adID"].'">Delete </a> <emp style="color:#258eff">> </emp>
-                                </div>
-                                
-                            </div>
+                            
                             <br> <br>
                             <img src="Images/cement2.jpeg" width="300px" height="200px">
                             <br>

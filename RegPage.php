@@ -12,25 +12,17 @@
 </head>
 <body>
 <nav>
-        <div class="navbar" id="navbar" align="center" style="font-size:0.7em;padding-top: -5px;">
-            <a href="HomePage.php
-            
-            " class="homeBtn" >
-                <img src="Images/logo.png" width="16px" id="logo"/>
-                Home
-            </a>
-            <a href="storage.php" >Store</a>
-            <a href="tools.php">Tools</a>
-            <a href="electronics.php">Electronics</a>
-            <a href="RegPage.php" class="active">Register</a>
-            <a href="loginPage.php">LogIn</a>
-            <a href="aboutUs.php" >About</a>
-            <a href="contactUs.php">Contact Us</a>
-            <a href="search.php" id="searchImg" ><img src="Images/search.png" width="16px"></a>
-            <a href="cart.php" id="shoppingCart" ><img src="Images/shoppingCart.png" width="16px"></a>
-        
-        </div>
-    </nav>
+                <div class="navbar" id="navbar" align="center" style="font-size:0.7em;padding-top: -5px;">
+                    <a href="HomePage.php" class="homeBtn active" >
+                        <img src="Images/logo.png" width="16px" id="logo"/>
+                        Home
+                    </a>
+                    <a href="RegPage.php" class="active">Register</a>
+                    <a href="loginPage.php">LogIn</a>
+                    <a href="aboutUs.php" >About</a>
+                
+                </div>
+            </nav>
 <br> <br>
 
 <br> <br>
