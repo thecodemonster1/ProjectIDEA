@@ -144,22 +144,6 @@
             <input type="file" id="imagePath" name="txtImagePath" >
             <label>Image Path</label>
           </div>
-          <div class="user-box">
-            <select id="bgcolor" name="txtBgcolor" required="">
-                <option value="black">Black</option>
-                <option value="white">White</option>
-            </select>
-            <label>Background Color</label>
-          </div>
-
-          <div class="user-box">
-            <select id="size" name="txtSize" required="">
-                <!-- <option value="blank" ></option> -->
-                <option value="big">Big</option>
-                <option value="small">Small</option>
-            </select>
-            <label>Size</label>
-          </div>
           
           <div class="user-box">
             <select id="category" name="txtCategory" required="">
@@ -173,6 +157,11 @@
           <div class="user-box">
             <input type="number" id="quantity" name="txtQuantity" required="">
             <label>Quantity</label>
+          </div>
+
+          <div class="user-box">
+            <input type="number" id="price" name="txtPrice" required="">
+            <label>Price</label>
           </div>
 
             <script>
