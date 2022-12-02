@@ -128,52 +128,50 @@
 
     <div class="reg-box">
         <h2>Register</h2>
-        <form action="RegHandler.php" method="post">
+        <form action="addPostHandler.php" method="post">
           <div class="user-box">
-            <input type="text" id="fnameBox" name="productName" required=""/>
+            <input type="text" id="productName" name="txtProductName" required=""/>
             <label>Product Name</label>
           </div>
           <div class="user-box">
-            <input type="textarea" id="lnameBox" name="description" required="" placeholder="One Line description"> 
+            <input type="text" id="description" name="txtDescription" required="" placeholder="One Line description"> 
             <!-- change text area -->
             <label>Description</label>
           </div>
           <div class="user-box">
-            <input type="file" id="emailBox" name="imagePath" required="">
+            <input type="file" id="imagePath" name="txtImagePath" required="">
             <label>Image Path</label>
           </div>
           <div class="user-box">
-            <select id="roleDropdown" name="bgcolor" required="">
+            <select id="bgcolor" name="txtBgcolor" required="">
                 <!-- <option value="blank" ></option> -->
                 <option value="black">Black</option>
                 <option value="white">White</option>
-                
             </select>
-            
             <label>Background Color</label>
           </div>
 
           <div class="user-box">
-            <select id="roleDropdown" name="size" required="">
+            <select id="size" name="txtSize" required="">
                 <!-- <option value="blank" ></option> -->
                 <option value="big">Big</option>
                 <option value="small">Small</option>
-                
             </select>
-            
             <label>Size</label>
           </div>
           
-
           <div class="user-box">
-            <select id="roleDropdown" name="category" required="">
+            <select id="category" name="txtCategory" required="">
                 <!-- <option value="blank" ></option> -->
                 <option value="farming">Farming Items</option>
                 <option value="construction">Construction Items</option>
-                
             </select>
-            
             <label>Category</label>
+          </div>
+
+          <div class="user-box">
+            <input type="number" id="quantity" name="txtQuantity" required="">
+            <label>Quantity</label>
           </div>
 
             <script>
@@ -192,34 +190,7 @@
         </form>
       </div>
 
-      <?php
-        if(isset($_POST["submitBtn"])){
-          // Read values from the text feild 
-          $firstName = $_POST["fnameBox"];
-          $lastName = $_POST["lnameBox"];
-          $email = $_POST["emailBox"];
-          $role = $_POST["roleDropdown"];
-          $contact = $_POST["contactNumberBox"];
-          $password = $_POST["passwordBox"];
-          $password2 = $_POST["passwordBox2"];
-          
-
-          $valid = false;
-          $con = mysqli_connect("localhost","root","","projectmchDB");
-          if(!$con){ // Error Handling part 
-            echo '<script> alert ("Could not connect to DB server. Please try again") </script>';
-          }
-          
-
-          if ($password == $password2){
-            $sql = "INSERT INTO `userTable` (`firstName`, `lastName`, `email`, `role`, `contachNumber`, `password`, `userID`) VALUES ('".$firstName."', '".$lastName."', '".$email."', '".$role."', '".$contact."', '".$password."', NULL);";
-            $result = mysqli_query($con,$sql);
-            header("Location:loginPage.php");
-          }else{
-            echo '<script> alert ("Please confirm the password") </script>';
-          }
-      } 
-      ?>
+      
       
 </div>
 </body>
