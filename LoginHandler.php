@@ -4,7 +4,7 @@
                 $Username = $_POST["UsernameText"];
                 $Password = $_POST["PasswordText"];
                 $valid = false;
-                
+
                 include 'config.php';
                 $sql = " SELECT * FROM `userTable` WHERE  `email` = '".$Username."' and  `password` = '".$Password."'";
                 $result = mysqli_query($con,$sql);
@@ -15,7 +15,11 @@
                 }
                 if($valid) {
                 $_SESSION["userName"] = $Username;
-                header("Location:HomePage.php");
+                if($Username == 'admin@gmail.com'){
+                    header("Location:admin.php");
+                  }else{
+                    header("Location:HomePage.php");
+                  }
                 } else {
                     echo '<script> alert ("Please check your Username and password") </script>';
                     header("Location:loginPage.php");
