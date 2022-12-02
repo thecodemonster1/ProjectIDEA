@@ -22,7 +22,7 @@
             <a href="storage.php" >Store</a>
             <a href="tools.php">Tools</a>
             <a href="electronics.php">Electronics</a>
-            <a href="RegPage.php" class="active">Register</a>
+            <a href="RegPage.php">Register</a>
             <a href="loginPage.php">LogIn</a>
             <a href="aboutUs.php" >About</a>
             <a href="contactUs.php">Contact Us</a>
@@ -120,31 +120,32 @@
                         0 0 50px #03e9f4,
                         0 0 100px #03e9f4;
         }
-
     </style>
 
 
 
-
-    <div class="reg-box">
-        <h2>Register</h2>
+<br><br>
+    <div class="reg-box" style="padding-top: 30px;">
+    
+        <h2>Add Post</h2>
         <form action="addPostHandler.php" method="post">
+        
           <div class="user-box">
+
             <input type="text" id="productName" name="txtProductName" required=""/>
             <label>Product Name</label>
           </div>
           <div class="user-box">
-            <input type="text" id="description" name="txtDescription" required="" placeholder="One Line description"> 
+            <input type="text" id="description" name="txtDescription" required="" > 
             <!-- change text area -->
             <label>Description</label>
           </div>
           <div class="user-box">
-            <input type="file" id="imagePath" name="txtImagePath" required="">
+            <input type="file" id="imagePath" name="txtImagePath" >
             <label>Image Path</label>
           </div>
           <div class="user-box">
             <select id="bgcolor" name="txtBgcolor" required="">
-                <!-- <option value="blank" ></option> -->
                 <option value="black">Black</option>
                 <option value="white">White</option>
             </select>
@@ -183,10 +184,13 @@
                 // }
             </script>
 
-          </div>
+          
           <button type="submit" name="submitBtn">
-            Register
+            Add Post
           </button>
+          <?php
+            include 'addPostHandler.php';
+          ?>
         </form>
       </div>
 

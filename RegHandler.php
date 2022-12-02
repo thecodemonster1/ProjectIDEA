@@ -11,10 +11,8 @@
           
 
           $valid = false;
-          $con = mysqli_connect("localhost","root","","projectmchDB");
-          if(!$con){ // Error Handling part 
-            echo '<script> alert ("Could not connect to DB server. Please try again") </script>';
-          }
+          
+          include 'config.php';
           
 
           if ($password == $password2){
