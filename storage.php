@@ -1,6 +1,6 @@
 <?php
     session_start();
-    if(!isset($_SESSION)){
+    if(!isset($_SESSION['UsernameText'])){
         header('Locatin: loginPage.php');
     }
 ?>
