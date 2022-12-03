@@ -5,32 +5,20 @@
 
                   $imagePath = "upload/".basename($_FILES["txtImagePath"]["name"]);
                   move_uploaded_file($_FILES["txtImagePath"]["tmp_name"],$imagePath);
-            
-                // $target_file = "uploads/". basename($_FILES["txtImagePath"]["name"]);
-                // $uploadOk = 1;
-                // $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-                // // Check if image file is a actual image or fake image
-                // if(isset($_POST["submitBtn"])) {
-                //   $check = getimagesize($_FILES["txtImagePath"]["tmp_name"]);
-                //   if($check !== false) {
-                //     echo "File is an image - " . $check["mime"] . ".";
-                //     $uploadOk = 1;
-                //   } else {
-                //     echo "File is not an image.";
-                //     $uploadOk = 0;
-                //   }
-                // }
 
-                  $bgcolor = $_POST["txtBgcolor"];
-                  $size = $_POST["txtSize"];
+                  
                   $category = $_POST["txtCategory"];
                   $quantity = $_POST["txtQuantity"];
+                  $price = $_POST["txtPrice"];
 
-                   $img = "/Applications/XAMPP/xamppfiles/htdocs/www/Project_MCH/Images/tap1.jpeg";
-                include 'config.php';
+                  //  $img = "/Applications/XAMPP/xamppfiles/htdocs/www/Project_MCH/Images/tap1.jpeg";
+                  $con = mysqli_connect("localhost","root","","projectmchDB");
+                  if(!$con){ // Error Handling part 
+                      die("Could not connect to DB server. Please try again");
+                  }
 
-                $sql = "INSERT INTO `adTable`(`productName`, `description`, `imagePath`, `backgroundColor`, `size`, `category`, `quantity`) 
-                VALUES ('".$productName."','".$description."','".$imagePath."','".$bgcolor."','".$size."','".$category."','".$quantity."');";
+                $sql = "INSERT INTO `adTable`(`productName`, `description`, `imagePath`, `category`, `quantity`, `price`) 
+                VALUES ('".$productName."','".$description."','".$imagePath."','".$category."','".$quantity."','".$price."');";
                 if(mysqli_query($con,$sql)){
                     echo "<script>alert('File Upload Successfully ');</script>";
                     

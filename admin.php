@@ -29,27 +29,7 @@
 
         <br>
 
-        <?php 
-                include 'Config.php';
-                $sql = "SELECT * FROM `item` WHERE `email` = '".$_SESSION["userName"]."';";
-                $result = mysqli_query($con,$sql);
-                if(mysqli_num_rows($result) > 0 ){
-                  while($row = mysqli_fetch_assoc($result)){
-                    echo "
-              <tr>
-                <td><div class='imagescontainer'><img src='".$row["path"]."'  width = '160' height = '164' ></div></td>
-                <td> ".$row["description"]." </td>
-                <td><a href='updateStuff.php?id=".$row["itemid"]."'><img src='images/edit2.png' alt='' width='32' height='34' />Edit</a></td>
-                <td><a href='editContent.php'><img src='images/delete.jpg' alt='' width='32' height='34'/></a>
-                <a href='deleteContent.php?id=".$row["itemid"]."'>Delete </a></td>
-                <td><p?<img src='images/publish2.png' alt='' width='32' height='34'/>
-                <a href='addcart.php?id=".$row["itemid"]."'>Add to cart</a></p></td>
-              </tr> ";
-            }
-          }
-              ?>
-
-
+    
 <!--    2nd Showcase-->
  <!-- <a href="deleteContent.php?id='.$row["itemid"].'">Delete </a> -->
 
@@ -62,25 +42,24 @@
 </div>
 
 <div class="manyShowCaseType" >
-                        
-<?php
-
-include 'config.php';
-                $sql = "SELECT * FROM `adTable`;";
+<?php 
+                $con = mysqli_connect("localhost","root","","projectmchDB");
+                if(!$con){ // Error Handling part 
+                    die("Could not connect to DB server. Please try again");
+                }
+                $sql = "SELECT * FROM `adTable` WHERE `category` = 'farming', adID % 2 <> 0;";
                 $result = mysqli_query($con,$sql);
                 if(mysqli_num_rows($result) > 0 ){
                   while($row = mysqli_fetch_assoc($result)){
-                    echo '
-                    
-                <!--        2_a showcase-->
-                        <div class="manyShowCase one" >
-                            <br>
-                            <h1 style="font-size:3em;"><b>Iron Rod</b></h1>
-                            <p>Strong. Steel. <br><br>
-                            Price: ###### <br><br>
-                            Available Stock: #### <br>
-                            </p>
-                            <div class="lmLinks">
+                    echo '<!--        2_a showcase-->
+                    <div class="manyShowCase one" >
+                        <br>
+                        <h1 style="font-size:3em;"><b>'.$row["productName"].'</b></h1>
+                        <p>'.$row['description'].'<br><br>
+                        Price: $'.$row['price'].' <br><br>
+                        Available Stock: '.$row['quantity'].' <br>
+                        </p>
+                        <div class="lmLinks">
                                 <div class="link one">
                                 <a href="deletePost.php?id='.$row["adID"].'">Delete </a> <emp style="color:#258eff">> </emp>
                                 </div>
@@ -88,36 +67,49 @@ include 'config.php';
                                 
                                 
                             </div>
-                            <br> <br>
-                            <img src="Images/ironRod1.jpeg" width="300px" height="200px">
-                            <br>
-                        </div>
-                <!--        2_b Showcase-->
-                        <div class="manyShowCase two"  align="center">
-                            <br>
-                            <h1 style="font-size:3em;"><b>Cement</b></h1>
-                            <p>Engineer&#39;s Choice. <br><br>
-                            Price: ###### <br><br>
-                            Available Stock: #### <br></p>
-                            <div class="lmLinks">
-                                <div class="link one">
-                                <a href="deletePost.php?id='.$row["adID"].'">Delete </a><emp style="color:#258eff">> </emp>
-                                </div>
-                                
-                            </div>
-                            <br> <br>
-                            <img src="Images/cement2.jpeg" width="300px" height="200px">
-                            <br>
-                        </div>
-                    ';
+                        <br> <br>
+                        <img src="'.$row['imagePath'].'" width="300px" height="200px">
+                        <br>
+                    </div>';
+              ;
             }
           }
+              ?>
 
-
-?>
+<?php 
+                include 'config.php';
+                $sql = "SELECT * FROM `adTable` WHERE `category` = 'farming', adID % 2 = 0;";
+                $result = mysqli_query($con,$sql);
+                if(mysqli_num_rows($result) > 0 ){
+                  while($row = mysqli_fetch_assoc($result)){
+                    echo '<!--        2_b Showcase-->
+                    <div class="manyShowCase two"  align="center">
+                                <br>
+                                <h1 style="font-size:3em;"><b>'.$row["productName"].'</b></h1>
+                                <p>'.$row['description'].'<br><br>
+                                Price: $'.$row['price'].' <br><br>
+                                Available Stock: '.$row['quantity'].' <br></p>
+                                <div class="lmLinks">
+                                <div class="link one">
+                                <a href="deletePost.php?id='.$row["adID"].'">Delete </a> <emp style="color:#258eff">> </emp>
+                                </div>
+                                &nbsp;
+                                
+                                
+                            </div>
+                                <br> <br>
+                                <img src="'.$row['imagePath'].'" width="300px" height="200px">
+                                <br>
+                            </div>';
+              ;
+            }
+          }
+              ?>
 
 </div>
                 
+
+            
                 
                 
                     
@@ -132,59 +124,70 @@ include 'config.php';
             <br>
     </div>
     <div class="manyShowCaseType" >
-        
-    <?php
 
-include 'config.php';
-$sql = "SELECT * FROM `adTable`;";
-$result = mysqli_query($con,$sql);
-if(mysqli_num_rows($result) > 0 ){
-    while($row = mysqli_fetch_assoc($result)){
-    echo '
-                    
-                <!--        2_a showcase-->
-                        <div class="manyShowCase one" >
-                            <br>
-                            <h1 style="font-size:3em;"><b>Iron Rod</b></h1>
-                            <p>Strong. Steel. <br><br>
-                            Price: ###### <br><br>
-                            Available Stock: #### <br>
-                            </p>
-                            <div class="lmLinks">
+    <?php 
+                include 'config.php';
+                $sql = "SELECT * FROM `adTable` WHERE `category` = 'construction', adID % 2 <> 0;";
+                $result = mysqli_query($con,$sql);
+                if(mysqli_num_rows($result) > 0 ){
+                  while($row = mysqli_fetch_assoc($result)){
+                    echo '<!--        2_a showcase-->
+                    <div class="manyShowCase one" >
+                        <br>
+                        <h1 style="font-size:3em;"><b>'.$row["productName"].'</b></h1>
+                        <p>Strong. Steel. <br><br>
+                        Price: $'.$row['price'].' <br><br>
+                        Available Stock: '.$row['quantity'].' <br>
+                        </p>
+                        <div class="lmLinks">
                                 <div class="link one">
                                 <a href="deletePost.php?id='.$row["adID"].'">Delete </a> <emp style="color:#258eff">> </emp>
                                 </div>
+                                &nbsp;
+                                
                                 
                             </div>
-                            <br> <br>
-                            <img src="Images/ironRod1.jpeg" width="300px" height="200px">
-                            <br>
-                        </div>
-                <!--        2_b Showcase-->
-                        <div class="manyShowCase two"  align="center">
-                            <br>
-                            <h1 style="font-size:3em;"><b>Cement</b></h1>
-                            <p>Engineer&#39;s Choice. <br><br>
-                            Price: ###### <br><br>
-                            Available Stock: #### <br></p>
-                            <div class="lmLinks">
-                                <div class="link one">
-                                <a href="deletePost.php?id='.$row["adID"].'">Delete </a> <emp style="color:#258eff">> </emp>
-                                </div>
-                                
-                            </div>
-                            <br> <br>
-                            <img src="Images/cement2.jpeg" width="300px" height="200px">
-                            <br>
-                        </div>
-                    ';
+                        <br> <br>
+                        <img src="'.$row['imagePath'].'" width="300px" height="200px">
+                        <br>
+                    </div>';
+              ;
             }
           }
+              ?>
 
-
-?>
+<?php 
+                include 'config.php';
+                $sql = "SELECT * FROM `adTable` WHERE `category` = 'construction', adID % 2 = 0;";
+                $result = mysqli_query($con,$sql);
+                if(mysqli_num_rows($result) > 0 ){
+                  while($row = mysqli_fetch_assoc($result)){
+                    echo '<!--        2_b Showcase-->
+                    <div class="manyShowCase two"  align="center">
+                        <br>
+                        <h1 style="font-size:3em;"><b>'.$row["productName"].'</b></h1>
+                        <p>Engineer&#39;s Choice. <br><br>
+                        Price: $'.$row['price'].' <br><br>
+                        Available Stock: '.$row['quantity'].' <br></p>
+                        <div class="lmLinks">
+                                <div class="link one">
+                                <a href="deletePost.php?id='.$row["adID"].'">Delete </a> <emp style="color:#258eff">> </emp>
+                                </div>
+                                &nbsp;
+                                
+                                
+                            </div>
+                        <br> <br>
+                        <img src="'.$row['imagePath'].'" width="300px" height="200px">
+                        <br>
+                    </div>';
+              ;
+            }
+          }
+              ?>
 
 </div>
+
 
  
     
