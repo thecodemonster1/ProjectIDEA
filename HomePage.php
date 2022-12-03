@@ -46,7 +46,11 @@
 
 <div class="manyShowCaseType" >
 <?php 
-                include 'config.php';
+                $con = mysqli_connect("localhost","root","","projectmchDB");
+                if(!$con){ // Error Handling part 
+                    die("Could not connect to DB server. Please try again");
+                }
+                
                 $sql = "SELECT * FROM `adTable` WHERE `category` = 'farming', adID % 2 <> 0;";
                 $result = mysqli_query($con,$sql);
                 if(mysqli_num_rows($result) > 0 ){

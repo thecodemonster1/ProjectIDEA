@@ -5,7 +5,11 @@
                 $Password = $_POST["PasswordText"];
                 $valid = false;
 
-                include 'config.php';
+                $con = mysqli_connect("localhost","root","","projectmchDB");
+                if(!$con){ // Error Handling part 
+                    die("Could not connect to DB server. Please try again");
+                }
+
                 $sql = " SELECT * FROM `userTable` WHERE  `email` = '".$Username."' and  `password` = '".$Password."'";
                 $result = mysqli_query($con,$sql);
                 if(mysqli_num_rows($result) > 0){

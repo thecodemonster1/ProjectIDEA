@@ -1,6 +1,11 @@
 <?php session_start();
 $adID = $_GET["adID"];
-include 'config.php';
+
+$con = mysqli_connect("localhost","root","","projectmchDB");
+    if(!$con){ // Error Handling part 
+        die("Could not connect to DB server. Please try again");
+    }
+    
   $sql = "DELETE FROM `adTable` WHERE `adID` = '".$adID."'";
   if(mysqli_query($con,$sql)){
 
