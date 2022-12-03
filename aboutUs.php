@@ -25,5 +25,11 @@
                 </div>
             </nav>
     </nav>
+    <p>
+        We are cheapest hardware store in Sri Lanka...<br>
+        
+        We providing lots of tools for simply build your house and make your garden... <br>
+        You are now in right place...
+    </p>
 </body>
 </html>
